@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Member from '../Member';
 
 const MemberList = () => {
     const [members, setMembers] = useState( []);
@@ -14,7 +15,7 @@ const MemberList = () => {
     }, []);
 
     const memberElements = members.map((member, i) => {
-                return <li key={i}>{member.nickname_en}</li>;
+                return <Member member={member} key={i}/>;
     })
   
   return (
