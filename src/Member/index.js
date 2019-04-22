@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import css from './index.css';
-import Series from '../Series';
 
 const Member = ({ member }) => {
 
@@ -17,14 +16,13 @@ const Member = ({ member }) => {
     }, []);
 
     return (
-        <li>
+        <li className={`series-${series.number}`}>
             <p>
                 {member.nickname_en}
             </p>
             <p>
                 {member.nickname_jp}
             </p>
-            <Series series={series} />
         </li>
     )
 

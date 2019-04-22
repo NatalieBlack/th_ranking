@@ -3,4 +3,18 @@ li {
     border-bottom: 1px solid #333;
     padding: 10px;
     background: #fafafa;
+    color: white;
+}
+
+.series-1 {
+    background: #39712a;
+}
+.series-2 {
+    background: #55a656;
+}
+.series-3 {
+    background: #004da0;
+}
+.series-4 {
+    background: #285114;
 }
